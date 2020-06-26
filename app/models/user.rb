@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :orders
 
   def current_order
-    if order = orders.active
+    if order = orders.active && order.present?
       return order.last
     else
       return orders.active.create

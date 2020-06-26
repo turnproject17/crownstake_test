@@ -32,7 +32,7 @@ APIs
 
 > endpoint = http://localhost:3000/api/v1
 
-Login 
+* Login 
 
 >
   path = "/sessions"
@@ -56,7 +56,7 @@ Login
                     updated_at:"2020-06-26T10:01:18.455Z"
                     }
                   }
-All products
+* All products
 > path = "/products"
   method = "get"
   response = {
@@ -77,7 +77,7 @@ All products
                   }
                 ]
               }
-Get Current Cart's order
+* Get Current Cart's order
 > path = "/order"
   method = "get"
   response = {
@@ -91,7 +91,7 @@ Get Current Cart's order
                     "line_items": []
                 }
               }
-Add Product to current cart
+* Add Product to current cart
 > path = "/order"
   method = "put/patch"
   params = {

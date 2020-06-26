@@ -18,6 +18,10 @@ class Order < ApplicationRecord
     self.update_column(:amount, self.line_items.pluck(:amount).sum)
   end
 
+  def active?
+    self.state == "active"
+  end
+
   private 
 
   def make_number
